@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragementCoverSheet">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accountable Politician"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="130dp"
+        />
+    <!-- TODO: Update blank fragment layout -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="80dp"
+    android:layout_marginRight="80dp">
+
+    <Button
+        android:id="@+id/callLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="replaceFragmentLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        />
+    <!-- -->
+    <Button
+        android:id="@+id/callCoverSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search a Politician"
+        android:onClick="replaceFragmentCoverSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+<!---->
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

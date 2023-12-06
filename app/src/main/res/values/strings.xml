@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PoliticiianProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_politician">New Politician</string>
+    <string name="existing_politician">Registered Politician</string>
+    <string name="visitor">Visitor</string>
+    <string name="dialog_start_game">If you are ready to first promise, click registry;\nif you are return politician, click registered politician;\nif you only want to check a politician\'s promise, click visitor.</string>
+    <string name="dialog_reg_politician">regiestered politician</string>
+    <string name="dialog_visitor">visitor</string>
+    <string name="dialog_registry">registry</string>
+    <string name="goback">Go Back to Home</string>
+    <string name="logout">Logout</string>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!-- android:name="com.example.politiciianproject.FragementCoverSheet"
+            <Button
+            android:id="@+id/callLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            />
+        <Button
+            android:id="@+id/callCoverSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search a Politician"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            />
+         <TextView
+             android:id="@+id/title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Accountable Politician"
+             android:textStyle="bold"
+             android:textSize="24sp"
+             android:layout_marginLeft="40dp"
+             android:layout_marginRight="40dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.5"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.1" />
+         <TextView
+             android:id="@+id/subTitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Search the politician's name and see their commitment:"
+             android:textSize="12sp"
+             android:layout_marginLeft="40dp"
+             android:layout_marginRight="40dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/title"
+             app:layout_constraintVertical_bias="0.05" />
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/subTitle"
+             app:layout_constraintVertical_bias="0.05" >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/input"
+                 android:hint="Enter here."
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <Button
+             android:id="@+id/submit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Submit"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/subTitle"
+             app:layout_constraintVertical_bias="0.2"
+             />
+
+         <TextView
+             android:id="@+id/display"
+             android:layout_width="match_parent"
+             android:layout_height="70dp"
+             android:textStyle="bold"
+             android:textSize="12sp"
+
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.5"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/submit"
+             app:layout_constraintVertical_bias="0" />
+
+
+         <TextView
+             android:id="@+id/loginTitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Login Here:"
+             android:textSize="24sp"
+             android:textStyle="bold"
+             android:layout_marginLeft="40dp"
+             android:layout_marginRight="40dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/display"
+             app:layout_constraintVertical_bias="0.05" />
+         <TextView
+             android:id="@+id/loginUsername"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="User Name: "
+             android:textSize="16sp"
+
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/loginTitle"
+             app:layout_constraintVertical_bias="0.07"
+             app:layout_constraintHorizontal_bias="0"/>
+
+             <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintLeft_toRightOf="@+id/loginUsername"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/loginTitle"
+                 app:layout_constraintVertical_bias="0"
+                 android:layout_marginLeft="100dp">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/inputUsername"
+                 android:hint="Enter Username Here"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+             </com.google.android.material.textfield.TextInputLayout>
+
+         <TextView
+             android:id="@+id/loginPassword"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Password: "
+             android:textSize="18sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/loginUsername"
+             app:layout_constraintVertical_bias="0.3"
+             app:layout_constraintHorizontal_bias="0"/>
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@id/loginUsername"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintLeft_toRightOf="@+id/loginPassword"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintVertical_bias="0.2"
+             android:layout_marginLeft="100dp">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:id="@+id/inputPassword"
+                 android:hint="Enter Password Here"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <Button
+             android:id="@+id/submitLogin"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Login"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+             app:layout_constraintVertical_bias="0.25"
+             app:layout_constraintHorizontal_bias="0.25"
+             />
+         <Button
+             android:id="@+id/submitRegistry"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Registry"
+             app:layout_constraintBaseline_toBaselineOf="@id/submitLogin"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+             app:layout_constraintVertical_bias="0.25"
+             app:layout_constraintHorizontal_bias="0.75"
+             />
+             -->
+</androidx.constraintlayout.widget.ConstraintLayout>

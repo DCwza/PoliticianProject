@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/goback"
+        android:icon="@mipmap/covericon_ic_launcher"
+        android:title="@string/goback"
+        />
+    <item android:id="@+id/existing_politician"
+        android:icon="@mipmap/covericon_ic_launcher"
+        android:title="@string/existing_politician" />
+    <item android:id="@+id/visitor"
+        android:icon="@mipmap/covericon_ic_launcher"
+        android:title="@string/visitor" />
+</menu>
